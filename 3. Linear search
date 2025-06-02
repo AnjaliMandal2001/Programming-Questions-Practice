@@ -1,0 +1,31 @@
+class Linear
+{
+  public static void main(String[] args)
+  {
+    int [] numbers={67,23,56,81,34,90,12,37};
+    int key=12;
+    int index=linearSearch(numbers,key);
+
+    if(index==-1)
+    {
+    System.out.println("NOT FOUND");
+    }
+    else
+    {
+     System.out.println("FOUND at index:"+index);
+    }
+  }
+  
+  public static int linearSearch(int[]numbers,int key)
+  {
+    for(int i=0;i<numbers.length;i++)
+    {
+      if(key==numbers[i])
+       {
+         return i;
+       }
+      
+    }
+   return -1;
+  }
+}
